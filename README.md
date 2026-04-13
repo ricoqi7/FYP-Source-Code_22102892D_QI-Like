@@ -1,5 +1,28 @@
 # FYP-Source-Code_22102892D_QI-Like
 
+## 🛠️ Code Structure & Responsibilities
+
+1. **Environment Setup (`carla_demo_v3_1.py`)**
+   - Builds the base simulation world.
+   - Manages SUMO co-simulation, 20 background vehicles, and 30 pedestrians with chaotic logic.
+
+2. **Data Collection (`carla_manual_gamepad_record.py`)**
+   - Collects expert driving data in chaotic environments via gamepad.
+   - Generates offline datasets for reward weight optimization.
+
+3. **Weight Optimization (`optimize_reward_weights.py`)**
+   - Performs meta-optimization to determine optimal reward weights:
+     - Safety ($w_1$): 0.567
+     - Efficiency ($w_2$): 0.275
+     - Comfort ($w_3$): 0.158
+
+4. **RL Training (`ppo_complete_train.py`)**
+   - Executes PPO algorithm for 100 iterations of online fine-tuning.
+   - Trains the driving policy using the optimized weights within the `v3_1` environment.
+
+5. **Policy Testing (`carla_policy_test.py`)**
+   - Performs inference tests to demonstrate AI performance in edge cases (e.g., hazard pedestrian crossings).
+
 ## 🛠️ 代码结构与职责
 
 1. **环境准备 (`carla_demo_v3_1.py`)**
