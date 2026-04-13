@@ -1,0 +1,47 @@
+# 进入 CARLA 项目文件夹
+cd C:\FYP\CARLA_0.9.16
+
+# 激活 Python 虚拟环境
+.\carla_env312\Scripts\activate
+
+# 部署手柄环境
+pip install pygame
+
+# 可选：确认 Python 版本
+python --version
+
+# 可选：确认 carla 是否可用
+python -c "import carla; print('CARLA API available')"
+
+# 启动Carla UE4
+.\CarlaUE4.exe -quality-level=Low
+
+# 启动脚本代码
+python carla_demo_v3_1.py
+
+python carla_demo_v4_0.py
+
+python carla_demo_v4_1.py
+
+#数据采集，要单开一个command prompt，并重复启动步骤
+python carla_manual_gamepad_record.py
+
+#训练，同样需要单开
+python ppo_complete_train.py
+
+# 启动 Tensorboard 查看 RL 进度
+tensorboard --logdir=./ppo_carla_logs/
+
+
+
+#SUMO测试部分，不用看
+.\sumo_env\Scripts\activate
+
+cd C:\FYP\CARLA_0.9.16\Co-Simulation\Sumo\util
+
+python "$env:SUMO_HOME\tools\randomTrips.py" -n Town10HD_sumo.net.xml -o Town10HD_trips.trips.xml -p 1 -r 40 --seed 42 --pedestrians 80 --binDir "$env:SUMO_HOME\bin"
+
+sumo-gui Town10HD.sumocfg
+
+sumo-gui Town10HD.sumocfg --step-length 0.05 --delay 20
+

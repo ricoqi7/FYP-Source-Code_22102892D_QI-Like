@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-01-08 18:19:33.352956 by Eclipse SUMO randomTrips.py v1_25_0+0000-ac6c5a6752d
+<configuration>
+    <net-file value="C:\FYP\CARLA_0.9.16\sumo_demo_Town10HD_Opt\Town10HD_Opt.net.xml"/>
+    <route-file value="C:\FYP\CARLA_0.9.16\sumo_demo_Town10HD_Opt\Town10HD_Opt.rou.xml"/>
+    <end value="180.0"/>
+    <period value="6.0"/>
+</configuration>
+-->
+
+<!-- generated on 2026-01-08T18:19:33.279644+08:00 by Eclipse SUMO duarouter 1.25.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\FYP\CARLA_0.9.16\sumo_demo_Town10HD_Opt\Town10HD_Opt.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\FYP\CARLA_0.9.16\sumo_demo_Town10HD_Opt\Town10HD_Opt.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="180.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0" depart="0.00">
+        <route edges="14 13 -5 -6 -22 16 15 19 18 5 4 -8 -1"/>
+    </vehicle>
+    <vehicle id="1" depart="6.00">
+        <route edges="-2 -3 -0 -10 -17 7 6 -18"/>
+    </vehicle>
+    <vehicle id="2" depart="12.00">
+        <route edges="18 -6 -22 16"/>
+    </vehicle>
+    <vehicle id="3" depart="18.00">
+        <route edges="5 4 -8 -1 -2 21 20 -15 -16 22 -7 17 10 0 3 2 -11"/>
+    </vehicle>
+    <vehicle id="4" depart="24.00">
+        <route edges="-6 -22 16 15 19 18 5 4 -8 -1"/>
+    </vehicle>
+    <vehicle id="5" depart="30.00">
+        <route edges="-18 -19 -15 -16 22 -7 17 10 0"/>
+    </vehicle>
+    <vehicle id="6" depart="36.00">
+        <route edges="-1 -2 -3 -0 -10 -17"/>
+    </vehicle>
+    <vehicle id="7" depart="42.00">
+        <route edges="14 13 -5 -6 -7 17 10"/>
+    </vehicle>
+    <vehicle id="8" depart="48.00">
+        <route edges="-18 -19 -20 -21 2 1 8 -4 -13 12"/>
+    </vehicle>
+    <vehicle id="9" depart="54.00">
+        <route edges="21 20 19 18 -6 -22 16 15 -20 -21 -3 -0"/>
+    </vehicle>
+    <vehicle id="10" depart="60.00">
+        <route edges="21 20 -15 -16 22 -7 17"/>
+    </vehicle>
+    <vehicle id="11" depart="66.00">
+        <route edges="-22 16 15 -20 9 -12 -14 -15"/>
+    </vehicle>
+    <vehicle id="12" depart="72.00">
+        <route edges="8 -4 -5 -6 -22"/>
+    </vehicle>
+    <vehicle id="13" depart="78.00">
+        <route edges="-12"/>
+    </vehicle>
+    <vehicle id="14" depart="84.00">
+        <route edges="22 -7 17 10 0 3 2 1 8 -4 -13 12"/>
+    </vehicle>
+    <vehicle id="15" depart="90.00">
+        <route edges="21 20 19 18"/>
+    </vehicle>
+    <vehicle id="16" depart="96.00">
+        <route edges="1 8"/>
+    </vehicle>
+    <vehicle id="17" depart="102.00">
+        <route edges="-4 -13 -14 -15 -16 22 -7 17 10"/>
+    </vehicle>
+    <vehicle id="18" depart="108.00">
+        <route edges="22 6 -18 -19 14 13"/>
+    </vehicle>
+    <vehicle id="19" depart="114.00">
+        <route edges="3 2 1 8 -4 -13 12 11"/>
+    </vehicle>
+    <vehicle id="20" depart="120.00">
+        <route edges="17 10 0 3 2 -11 -9 -21 -3 -0 -10"/>
+    </vehicle>
+    <vehicle id="21" depart="126.00">
+        <route edges="-18 -19 -20"/>
+    </vehicle>
+    <vehicle id="22" depart="132.00">
+        <route edges="-11 -12 -14 -15 -16 22 6 -18"/>
+    </vehicle>
+    <vehicle id="23" depart="138.00">
+        <route edges="-12 -14 19 18 5 4 -8 -1 -2"/>
+    </vehicle>
+    <vehicle id="24" depart="144.00">
+        <route edges="14 13 -5 -18 -19 -20 -21 -3"/>
+    </vehicle>
+    <vehicle id="25" depart="150.00">
+        <route edges="-4 -13 -14 -20 -21 -3 -0 -10 -17"/>
+    </vehicle>
+    <vehicle id="26" depart="156.00">
+        <route edges="-2 -3 -0 -10 -17 7"/>
+    </vehicle>
+    <vehicle id="27" depart="162.00">
+        <route edges="14 13"/>
+    </vehicle>
+    <vehicle id="28" depart="168.00">
+        <route edges="-15 -16 22 -7 17 10 0 3 21 20 19 18"/>
+    </vehicle>
+    <vehicle id="29" depart="174.00">
+        <route edges="-15 -16 22 -7 17 10 0 3 2 1 8 -4"/>
+    </vehicle>
+</routes>
